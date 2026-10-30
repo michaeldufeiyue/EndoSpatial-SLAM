@@ -1,6 +1,6 @@
-# EndoSpatial-SLAM revised manuscript and reproducibility package
+# EndoSpatial-SLAM reproducibility package
 
-This package contains a revised LaTeX manuscript, the figures embedded in it, and the Python code used to generate the synthetic curves and tables.
+This package contains the figures, and the Python code used to generate the synthetic curves and tables.
 
 ## Scope and scientific status
 
