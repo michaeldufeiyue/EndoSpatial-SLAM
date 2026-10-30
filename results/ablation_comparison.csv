@@ -1,0 +1,6 @@
+variant,ATE_RMSE_mean_m,ATE_RMSE_std_m,RPE_mean_m_per_frame,rotation_RMSE_mean_deg,availability_mean_percent
+Full_DHR,0.141240,0.002835,0.193568,0.743422,100.0000
+No_observability,0.156861,0.007432,0.189404,0.720998,100.0000
+No_manifold_rotation,0.136967,0.002547,0.188322,1.124330,100.0000
+No_state_cleansing,0.173485,0.003017,0.195418,0.784082,100.0000
+Homogeneous_AI_pool,0.514427,0.007384,0.308778,3.005199,100.0000

@@ -1,0 +1,157 @@
+{
+  "seed": 20261030,
+  "trials": 50,
+  "dt_s": 0.1,
+  "duration_s": 40.0,
+  "scenario_summary": {
+    "I": {
+      "E1_geometry": {
+        "ate_mean": 0.4649264812033269,
+        "ate_std": 0.006024891234164675,
+        "rpe_mean": 0.25928690657671505,
+        "rotation_mean": 0.8934151379702671,
+        "availability_mean": 100.0
+      },
+      "E2_spatial": {
+        "ate_mean": 0.21537501469628836,
+        "ate_std": 0.00396669837473318,
+        "rpe_mean": 0.2972318707273167,
+        "rotation_mean": 1.2571865907124369,
+        "availability_mean": 100.0
+      },
+      "E3_graph": {
+        "ate_mean": 0.23391831514458214,
+        "ate_std": 0.0050530424005238985,
+        "rpe_mean": 0.3239298338422166,
+        "rotation_mean": 1.1587359517712006,
+        "availability_mean": 100.0
+      },
+      "Static_ensemble": {
+        "ate_mean": 0.22266152333542688,
+        "ate_std": 0.003811002299309994,
+        "rpe_mean": 0.16790994441143553,
+        "rotation_mean": 0.6229598644190673,
+        "availability_mean": 100.0
+      },
+      "EndoSpatial_DHR": {
+        "ate_mean": 0.12934424381045542,
+        "ate_std": 0.0036923100998812863,
+        "rpe_mean": 0.1785283743554286,
+        "rotation_mean": 0.6810334454941662,
+        "availability_mean": 100.0
+      }
+    },
+    "II": {
+      "E1_geometry": {
+        "ate_mean": 0.1781787515269739,
+        "ate_std": 0.003085756131455384,
+        "rpe_mean": 0.2464138306233462,
+        "rotation_mean": 0.8967449252977424,
+        "availability_mean": 100.0
+      },
+      "E2_spatial": {
+        "ate_mean": 0.5154440584535332,
+        "ate_std": 0.005988127832500821,
+        "rpe_mean": 0.30909447344172175,
+        "rotation_mean": 2.999278718090794,
+        "availability_mean": 100.0
+      },
+      "E3_graph": {
+        "ate_mean": 0.23202266399804106,
+        "ate_std": 0.005225402863154242,
+        "rpe_mean": 0.32127794169199986,
+        "rotation_mean": 1.1637983978556437,
+        "availability_mean": 100.0
+      },
+      "Static_ensemble": {
+        "ate_mean": 0.18448470889435606,
+        "ate_std": 0.0030974626640774645,
+        "rpe_mean": 0.1661301658984391,
+        "rotation_mean": 1.0379378017327772,
+        "availability_mean": 100.0
+      },
+      "EndoSpatial_DHR": {
+        "ate_mean": 0.1258905236855072,
+        "ate_std": 0.0026897317924178886,
+        "rpe_mean": 0.17404504719110253,
+        "rotation_mean": 0.6564629982394237,
+        "availability_mean": 100.0
+      }
+    },
+    "III": {
+      "E1_geometry": {
+        "ate_mean": 0.5233929980077258,
+        "ate_std": 0.023049399611623493,
+        "rpe_mean": 0.26745025383567267,
+        "rotation_mean": 2.7087804628480945,
+        "availability_mean": 100.0
+      },
+      "E2_spatial": {
+        "ate_mean": 0.5142570535244808,
+        "ate_std": 0.007403858880288598,
+        "rpe_mean": 0.30804605670560276,
+        "rotation_mean": 3.004003796733583,
+        "availability_mean": 100.0
+      },
+      "E3_graph": {
+        "ate_mean": 0.23230577748127146,
+        "ate_std": 0.004785604659540707,
+        "rpe_mean": 0.3191443645376484,
+        "rotation_mean": 1.1639838373917017,
+        "availability_mean": 100.0
+      },
+      "Static_ensemble": {
+        "ate_mean": 0.2839954377555933,
+        "ate_std": 0.009031252767062507,
+        "rpe_mean": 0.17051598182398384,
+        "rotation_mean": 1.5231300748647094,
+        "availability_mean": 100.0
+      },
+      "EndoSpatial_DHR": {
+        "ate_mean": 0.14124030261476864,
+        "ate_std": 0.002834730866392072,
+        "rpe_mean": 0.1935682464185919,
+        "rotation_mean": 0.7434219092736137,
+        "availability_mean": 100.0
+      }
+    }
+  },
+  "ablation_summary": {
+    "Full_DHR": {
+      "ate_mean": 0.14124030261476864,
+      "ate_std": 0.002834730866392072,
+      "rpe_mean": 0.1935682464185919,
+      "rotation_mean": 0.7434219092736137,
+      "availability_mean": 100.0
+    },
+    "No_observability": {
+      "ate_mean": 0.1568609111714205,
+      "ate_std": 0.007432198681158983,
+      "rpe_mean": 0.18940426007511144,
+      "rotation_mean": 0.7209979762378913,
+      "availability_mean": 100.0
+    },
+    "No_manifold_rotation": {
+      "ate_mean": 0.1369666584022658,
+      "ate_std": 0.0025469108038786944,
+      "rpe_mean": 0.1883224119638689,
+      "rotation_mean": 1.1243299691139446,
+      "availability_mean": 100.0
+    },
+    "No_state_cleansing": {
+      "ate_mean": 0.17348487394950246,
+      "ate_std": 0.0030170196515685124,
+      "rpe_mean": 0.19541778386551623,
+      "rotation_mean": 0.7840816534760203,
+      "availability_mean": 100.0
+    },
+    "Homogeneous_AI_pool": {
+      "ate_mean": 0.5144265694062407,
+      "ate_std": 0.007383661879642245,
+      "rpe_mean": 0.30877820356721747,
+      "rotation_mean": 3.005199077385232,
+      "availability_mean": 100.0
+    }
+  },
+  "scope_note": "Synthetic SE(3)-tangent error simulation only; not real dataset or hardware measurements."
+}
