@@ -42,6 +42,3 @@ The Python script writes its figures to `figures/` and its CSV/JSON outputs to `
 4. The comparison labels `E1`, `E2`, and `E3` identify simulated estimator streams with different prescribed error models. They do not denote executable reimplementations of published SLAM systems.
 5. All reported simulated availability values are 100% in this model, so the manuscript deliberately does not claim operational-survival or hardware-latency performance.
 
-## Before external submission
-
-A submission making real-world performance claims would require integration of executable estimator implementations, documented sensor recordings and calibration files, a reproducible attack-injection pipeline, covariance-calibration experiments, and hardware profiling. In particular, the mathematical covariance/correlation model and the state-cleansing mechanism must be validated on real sensor data before drawing real-world security conclusions.
