@@ -6,7 +6,7 @@ This package contains the figures, and the Python code used to generate the synt
 
 **Important:** all experimental data in the manuscript are generated synthetically by the supplied Monte-Carlo simulator in the six-dimensional local pose-error space. No real-world dataset, physical robot, or embedded computing platform is used. The simulation does not ingest raw LiDAR, camera, or IMU recordings, and it does not validate a complete SLAM implementation or establish a worst-case security guarantee.
 
-The synthetic experiment uses a 40 s 3-D figure-eight reference trajectory sampled at 10 Hz, 50 trials per scenario, and a fixed random seed (`20261030`). It injects prescribed LiDAR spoofing, corridor-degeneracy, and spatial-model OOD bias episodes. In the state-cleansing ablation, the post-attack bias is retained to model persistent estimator-memory contamination. In the full-method stream, that injected bias is reset after the disturbance episode. This is an error-stream abstraction: actual timestamped voxel rollback, Transformer KV-cache reconstruction, and their computational cost are **not** simulated.
+The synthetic experiment uses a 40 s 3-D figure-eight reference trajectory sampled at 10 Hz, 50 trials per scenario, and a fixed random seed (`202609`). It injects prescribed LiDAR spoofing, corridor-degeneracy, and spatial-model OOD bias episodes. In the state-cleansing ablation, the post-attack bias is retained to model persistent estimator-memory contamination. In the full-method stream, that injected bias is reset after the disturbance episode. This is an error-stream abstraction: actual timestamped voxel rollback, Transformer KV-cache reconstruction, and their computational cost are **not** simulated.
 
 ## Package layout
 
