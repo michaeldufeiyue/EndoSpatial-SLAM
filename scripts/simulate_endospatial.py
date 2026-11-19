@@ -4,7 +4,7 @@
 This is a controlled simulation, not a run of FAST-LIO2/LIO-SAM/Transformer
 implementations or a physical-hardware evaluation. The three executor streams
 are generated from explicitly stated stochastic error models. The script
-creates all figures and CSV files used by the revised manuscript.
+creates all figures and CSV files used by the manuscript.
 
 Run:
     python simulate_endospatial.py --outdir ../
