@@ -9,17 +9,11 @@ This package contains the figures, and the Python code used to generate the synt
 The synthetic experiment uses a 40 s 3-D figure-eight reference trajectory sampled at 10 Hz, 50 trials per scenario, and a fixed random seed (`202609`). It injects prescribed LiDAR spoofing, corridor-degeneracy, and spatial-model OOD bias episodes. In the state-cleansing ablation, the post-attack bias is retained to model persistent estimator-memory contamination. In the full-method stream, that injected bias is reset after the disturbance episode. This is an error-stream abstraction: actual timestamped voxel rollback, Transformer KV-cache reconstruction, and their computational cost are **not** simulated.
 
 ## Package layout
-
-- `EndoSpatial_SLAM_revised.tex` — revised LaTeX source.
-- `EndoSpatial_SLAM_revised.pdf` — compiled manuscript.
-- `figures/*.pdf` — vector figures used by the manuscript.
-- `figures/*.png` — raster previews of the same figures.
 - `scripts/simulate_endospatial.py` — generates synthetic Monte-Carlo results, CSV tables, and performance/trajectory/ablation curves.
 - `scripts/draw_architecture.py` — generates the system architecture diagram.
 - `results/scenario_comparison.csv` — per-scenario estimator comparison (mean and standard deviation over 50 trials).
 - `results/ablation_comparison.csv` — ablation metrics for the compound scenario.
 - `results/simulation_summary.json` — machine-readable summaries, random seed, and scope note.
-
 ## Reproduction
 
 Requirements: Python 3.10+ with `numpy` and `matplotlib`; a LaTeX environment with IEEEtran, `algorithm2e`, `amsmath`, `graphicx`, `booktabs`, and `multirow` to compile the paper.
@@ -29,7 +23,6 @@ From this directory:
 ```bash
 python scripts/simulate_endospatial.py --outdir .
 python scripts/draw_architecture.py
-latexmk -pdf -interaction=nonstopmode EndoSpatial_SLAM_revised.tex
 ```
 
 The Python script writes its figures to `figures/` and its CSV/JSON outputs to `results/`. The reported summary values in the LaTeX tables are rounded from these generated CSV files.
